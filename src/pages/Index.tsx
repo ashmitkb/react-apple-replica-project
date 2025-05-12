@@ -70,7 +70,7 @@ const Index = () => {
               textColor: "text-black"
             },
             {
-              title: "MacBook Air 15"",
+              title: "MacBook Air 15\"",
               subtitle: "Impressively big. Impossibly thin.",
               backgroundImage: "https://www.apple.com/v/home/az/images/promos/macbook-air-15/promo_macbook_air_15_midnight__ck5rvqlq9qea_large.jpg",
               links: [
