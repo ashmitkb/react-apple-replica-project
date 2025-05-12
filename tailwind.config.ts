@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,12 +19,36 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: [
+					'SF Pro Text', 
+					'SF Pro Icons', 
+					'Helvetica Neue', 
+					'Helvetica', 
+					'Arial', 
+					'sans-serif'
+				],
+				display: [
+					'SF Pro Display',
+					'SF Pro Icons',
+					'Helvetica Neue',
+					'Helvetica',
+					'Arial', 
+					'sans-serif'
+				]
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				apple: {
+					black: '#1d1d1f',
+					darkgray: '#86868b',
+					lightgray: '#f5f5f7',
+					blue: '#0071e3',
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -84,11 +109,20 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0'
+					},
+					'100%': {
+						opacity: '1'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out'
 			}
 		}
 	},
