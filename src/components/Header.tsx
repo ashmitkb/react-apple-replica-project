@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
-import { Search, Shopping, X, Menu, Apple } from 'lucide-react';
+import { Search, ShoppingCart, X, Menu, Apple } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const Header = () => {
@@ -94,7 +93,7 @@ const Header = () => {
               <Search size={18} />
             </button>
             <a href="#" className="hover:text-gray-300">
-              <Shopping size={18} />
+              <ShoppingCart size={18} />
             </a>
           </div>
         </nav>
